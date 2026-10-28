@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="box.css">
+</head>
+
+
+<body>
+    <main class="form-card">
+        <h1>Student Registration</h1>
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="1" max="120">
+            <label for="course">Course</label>
+            <select id="course" name="course">
+                <option value="bsc">BSc</option>
+                <option value="mca">MCA</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+
+</html>

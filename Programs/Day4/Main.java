@@ -65,6 +65,7 @@ public class Main {
             System.out.println("Invalid input: enter numbers for ID, count, and marks.");
         } finally {
             sc.close();
+
         }
     }
 }
