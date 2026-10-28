@@ -1,18 +1,12 @@
 import { NavLink } from 'react-router-dom';
-import { AcademicIcon } from './Icons';
 
 export default function Navbar() {
   return (
-    <header className="navbar-container" role="banner">
+    <header className="navbar-container">
       <div className="nav-brand">
-        <NavLink to="/" aria-label="StudentPortal Home">
-          <span className="brand-badge">
-            <AcademicIcon size={18} />
-          </span>
-          <span>StudentPortal</span>
-        </NavLink>
+        <NavLink to="/">StudentPortal</NavLink>
       </div>
-      <nav className="nav-links" aria-label="Main Navigation">
+      <nav className="nav-links">
         <NavLink
           to="/"
           end
