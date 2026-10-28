@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 750px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f4f6f9;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form,
+        .controls,
+        .student-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        input {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        form input {
+            width: 100%;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .student-card {
+            border: 1px solid #ddd;
+        }
+
+        #message {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Dashboard</h1>
+
+    <form id="studentForm">
+        <h2>Add Student</h2>
+
+        <input type="text" id="name" placeholder="Student name" required>
+
+        <input type="number" id="marks" placeholder="Marks (0-100)" min="0" max="100" required>
+
+        <button type="submit">Add Student</button>
+    </form>
+
+    <div class="controls">
+        <h2>Search Students</h2>
+
+        <input type="text" id="search" placeholder="Search by name">
+
+        <button id="showAll">Show All</button>
+        <button id="showPassed">Show Passed (40+)</button>
+        <button id="loadUsers">Load API Users</button>
+
+        <p id="message" aria-live="polite"></p>
+    </div>
+
+    <h2>Students</h2>
+
+    <div id="studentList"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
