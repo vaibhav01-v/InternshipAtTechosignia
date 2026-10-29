@@ -5,8 +5,7 @@ export default function About() {
       <p>Learn more about our application and its purpose.</p>
       <div className="card">
         <p>
-          This project demonstrates Single Page Application (SPA) navigation using React Router.
-          Instead of making HTTP requests to the server for every page transition, React Router updates the browser URL and swaps components on the client side instantly.
+          This is About Student Portal!!!!
         </p>
       </div>
     </div>
